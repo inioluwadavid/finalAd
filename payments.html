@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+
+<link rel="shortcut icon" href="img/opa.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">  
+    <link rel="stylesheet" href="./css/font-awesome.css">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+          <a  href="#">
+            
+          </a> 
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                  <a class="nav-link" href="./index.html">Users <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./orders.html">Orders</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./drip-feed.html">Drip-feed</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./Refill.html">Refill</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./service.html">Services</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="./payments.html">Payment</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./ticket.html">Ticket</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./report.html">Reports</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="./appearance.html">Apperance</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./setting.html">Settings</a>
+                  </li>
+               
+                
+              </ul>
+              <div class="form-inline my-2 my-lg-0">
+                <i class="fas fa-cog"></i>
+                    <a class="nav-link" href="#">Account</a>
+                    <a class="nav-link" href="#">LogOut</a>
+                  
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <section class="sub-nav">
+      <div class="container-fluid  side-b">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="mr-auto" >
+              <div style="padding-top: 3px; padding-right: 3px;" class="pay-b" >
+                <h6 style="display: inline; color:white; border: 1px solid white; padding: 4px;">All payment</h6>
+
+              </div>
+              
+            </div>
+             
+          </div>
+          <div class="col-sm-6 " >
+            <form class="form-inline float-right" >
+              <div class="input-group input-group-search">
+                <a  style="padding-right: 9px; padding-top: 5px;" href="#">Export</a>
+                <input id="searchService" type="search" name="search" style="background-color: #2f3035; border: 1px solid white;" class="form-control search-input" placeholder="Search" >
+                <div class="nav-item dropdown " style="background-color: #2f3035; border: 1px solid white; height: 38px;">
+                  <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   User
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                   
+                  </div>
+              </div>
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default form-control " style="background-color: #2f3035; border: 1px solid white;"><i class="fas fa-search"></i></button>
+                </span>
+              </div>
+            </form>
+          </div>
+         
+          <div>
+            
+          </div>
+        </div>
+      </div>
+      <!-- <nav class="navbar navbar-expand-md navbar-dark ">
+          
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+              <button class="nav-b"> <a class="nav-link" href="#">Add payment <span class="sr-only">(current)</span></a></button>  
+              </li>
+             
+              
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              
+              
+              <div class="input-group input-group-search">
+                <a class="nav-link " style="color: blue;" href="#">Export</a>
+                <input id="searchService" type="search" name="search" style="background-color: #2f3035;" class="form-control search-input" placeholder="Search" >
+                <div class="nav-item dropdown " style="background-color: #2f3035;">
+                  <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   User
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                   
+                  </div>
+              </div>
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default form-control " style="background-color: #2f3035;"><i class="fas fa-search"></i></button>
+                </span>
+              </div>
+            </form>
+          </div>
+        </nav> -->
+  </section>
+
+
+  <section class="table-sec">
+    <div class="table-all">
+    <div class="table-responsive">
+      <table class="table " style=" border-collapse: collapse; font-size: 12px;">
+          <thead style="background-color: #1b1c20;" >
+              <tr >
+                
+                <th scope="col"  > ID </th>
+               
+                <th scope="col " >User</th>
+                <th scope="col" >Amount</th>
+                <th scope="col" >
+                  <div class="dropdown">
+                  <form action="" name="action">
+                      <select name="action" size="1" style="background-color: #1b1c20; color: white; padding: 1px; margin: 1px;">
+                          <option value="service">Method</option>
+                          
+                      </select>
+                  </form>
+                </div>
+              </th>
+              <th scope="col" >
+                <div class="dropdown">
+                <form action="" name="action">
+                    <select name="action" size="1" style="background-color: #1b1c20; color: white; padding: 1px; margin: 1px;">
+                        <option value="service">Status</option>
+                        
+                    </select>
+                </form>
+              </div>
+            </th>
+            <th scope="col" >
+              <div class="dropdown">
+              <form action="" name="action">
+                  <select name="action" size="1" style="background-color: #1b1c20; color: white; padding: 1px; margin: 1px;">
+                      <option value="service">Frud Risk</option>
+                      
+                  </select>
+              </form>
+            </div>
+          </th>
+                <th scope="col" >Memo</th>
+               
+                <th scope="col" >Created</th>
+                <th scope="col" >Updated</th>
+                <th scope="col" >
+                  <div class="dropdown">
+                  <form action="" name="action">
+                      <select name="action" size="1" style="background-color: #1b1c20; color: white; padding: 1px; margin: 1px;">
+                          <option value="service">Mode</option>
+                          
+                      </select>
+                  </form>
+                </div>
+              </th>
+                
+               
+              
+                
+              </tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  
+                    <td > 738</td>
+                  <td >Mark</td>
+                  <td >1234567</td>
+                  <td   >355.00</td>
+                  
+                  <td >Manuel</td>
+                  <td >Created</td>
+                  <td > Yes</td>
+                  <td >2021-11-16 15:20:30</td>
+                  <td >Yes</td>
+                  <td >Manuel</td>
+           
+                  </tr>
+                  
+              
+                
+                  
+               
+               
+                
+            </tbody>
+        
+      </table>
+    </div>
+  </div>
+  </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,268 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #1b1c20;
+    font-family: 'Tajawal', sans-serif;
+} 
+
+header .navbar  .nav-link{
+    color: white;
+}
+ .navbar-nav .active{
+    background-color: #222327;
+    
+}
+header .navbar .nav-link:hover{
+    background-color: rgb(151, 146, 146);
+    color: black;
+    font-size: 1.1rem;
+}
+header .form-inline .fa-cog{
+    color: white;
+}
+
+header .navbar-toggler{
+    float: right;
+}
+.sub-nav .navbar .nav-b{
+    background-color: #222327;
+    border: 1px solid #2c2d31 ;
+}
+
+.sub-nav .navbar a{
+    text-decoration: none;
+    color: white;
+}
+table{
+    padding: 10px;
+    border: 2px solid rgb(211, 205, 205) !important;
+    border-radius: 5px;
+    color: white !important;
+    font-size: 12px;
+    text-align: left;
+    
+ 
+    
+}
+td,
+th {
+  padding: 10px;
+  border-bottom: 1px solid ;
+  text-align: left;
+}
+
+
+
+.table-sec .center{
+ margin-left: 0.5rem !important;
+  margin-right: 2rem !important;
+  border-collapse: collapse;
+}
+.table-sec .table{
+    margin: 0 2rem 0 1rem;
+    
+}
+.table-sec .check-c{
+    background-color: #2c2d31;
+    color: #222327;
+
+}
+.fa-search{
+    color: grey;
+
+}
+
+.navbar .search-input{
+    background-color:#222327 ;
+    border: 1px solid #050608;
+    border-right: 1px solid grey;
+}
+table, th, td {
+    border-collapse: collapse !important;
+}
+.navbar-toggler-icon{
+    
+    border: 1px solid white;
+    float: right;
+}
+.navbar-toggler-icon{
+    color: #222327 ;
+}
+
+table .table-divv{
+    background-color: #1b1c20;
+    color: white;
+    text-align: center;
+    border: 1px solid #222327 ;
+}
+.drop-up{
+    padding-bottom: 2rem;
+    border: 1px solid #222327 ;
+    
+}
+input[type='checkbox']{
+    width: 14px !important;
+    height: 12px !important;
+    margin: 5px;
+    margin-top:px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    outline: 1px solid gray;
+    box-shadow: none;
+    font-size: 0.8em;
+    text-align: center;
+    line-height: 1em;
+    background: grey;
+  }
+  input[type='checkbox']:checked:after {
+    content: '✔';
+    color: white;
+  }
+
+.table-all{
+    padding: 0 15px 7px 15px;
+}
+.m-border{
+    background-color: #1b1c20;
+    padding: 5px;
+    border: 1px solid grey;
+    margin-top: 10px;
+    color: white;
+
+}
+.form-control{
+    background-color: #222327;
+}
+.modal-content{
+    background-color:#222327 ;
+    color: white !important;
+}
+.s-border{
+    background-color: #1b1c20;
+    padding: 25px !important;
+    border: 1px solid #1b1c20 !important;
+    margin-bottom: 4rem !important;
+    color: white;
+}
+.p-border{
+    background-color: #1b1c20;
+    padding-right: 100px !important;
+    padding-top: 0px !important;
+    padding-left: 20px !important;
+    padding-bottom: 160px !important;
+    border: 1px solid #1b1c20 !important;
+    width: 100%;
+    margin: auto !important;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.s-style{
+    background-color:#1b1c20 ;
+    height: 35px;
+    padding-bottom: 2px;
+    color: white;
+    width: 100%;
+    border: 1px solid grey;
+}
+.integration-b{
+    border: 1px solid grey; 
+    width: 15%;
+     text-align: center;
+      padding: 5px;
+      margin-bottom: 10px; 
+       margin-top: 30px;
+       
+}
+
+.sub-nav .side-left{
+    color: white;
+    border: 1px solid grey;
+    width: 16%;
+    background-color: #1b1c20;
+    text-align: center;
+   padding: 1px;
+   padding-top: 5px;
+    
+}
+.sub-nav {
+    background-color: #222327;
+    padding: 20px;
+    
+}
+.noti-b{
+    border: 1px solid grey; 
+    margin-bottom: 10px;
+     width: 15%;
+     text-align: center;
+      padding: 5px;
+       margin-top: 40px;
+       
+}
+.report-b{
+    border: 1px solid grey;
+     margin-right: 7px;
+    color: white;
+    height: 38px;
+}
+.modal-b{
+    background-color: #1b1c20;
+     color: white;
+      width: 70%;
+     border: 1px solid grey;
+     text-align: center;
+     padding: 7px;
+
+}
+.setting-b{
+    margin-left: 170px;
+    border: #222327;
+    margin-bottom: 15px;
+}
+.setting  .active{
+    background-color: #222327;
+}
+
+@media (max-width: 1198px) {
+    .sub-nav .side-left{
+        width: 30%;
+        padding-top: 5px;
+    }
+    .integration-b{
+        width: 100px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+    .noti-b{
+        width: 100px;
+        text-align: center;
+        font-size: 12px;
+    }
+    .order-b{
+        margin-bottom: 15px;
+        padding-left: 2px;
+    }
+    .refill-down{
+        margin-bottom: 10px;
+        padding-left: 7px;
+    }
+    .modal-b{
+        padding: 0;
+        width: 50%;
+        margin-bottom: 8px;
+
+    }
+    .pay-b{
+        margin-bottom: 10px;
+        width: 100%;
+
+    }
+    .setting-b{
+        margin-left: 100px;
+    }
+}

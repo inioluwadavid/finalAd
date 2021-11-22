@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders</title>
+    <link rel="shortcut icon" href="img/opa.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">  
+    <link rel="stylesheet" href="./css/font-awesome.css">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <a  href="#">
+            
+          </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                  <a class="nav-link" href="./index.html">Users <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="./orders.html">Orders</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./drip-feed.html">Drip-feed</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./Refill.html">Refill</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./service.html">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./payments.html">Payment</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./ticket.html">Ticket</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./report.html">Reports</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./appearance.html">Apperance</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./setting.html">Settings</a>
+                  </li>
+               
+                
+              </ul>
+              <div class="form-inline my-2 my-lg-0">
+                <i class="fas fa-cog"></i>
+                    <a class="nav-link" href="#">Account</a>
+                    <a class="nav-link" href="#">LogOut</a>
+                  
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <section class="sub-nav">
+      <div class="container-fluid  side-b">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="mr-auto" >
+              <div class="order-b" style="padding-top: 3px; padding-right: 4px;" >
+                <h6 style="display: inline; color:white; border: 1px solid white; padding: 4px; padding-left: 5px;">All </h6>
+                <a href="#" style="display: inline; padding-left: 4px;">Awaiting</a>
+              <a href="#" style="display: inline; padding-left: 4px;">Pending</a>
+              <a href="#" style="display: inline; padding-left: 4px;">In progress</a>
+              <a href="#" style="display: inline; padding-left: 4px;">Completed</a>
+              <a href="#" style="display: inline; padding-left: 4px;">Partial</a>
+              <a href="#" style="display: inline; padding-left: 4px;">Canceled</a>
+              <a href="#" style="display: inline; padding-left: 4px;">Processing</a>
+              <a href="#" style="display: inline; padding-left: 4px;">Fail</a>
+              <a href="#" style="display: inline; padding-left: 4px;">Error</a>
+              </div>
+              
+            </div>
+             
+          </div>
+          <div class="col-sm-6 " >
+            <form class="form-inline float-right" >
+              <a href="#" class="nav-link" >Export</a>
+              <div class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Last 90 days
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                   
+                  </div>
+              </div>
+              <div class="input-group input-group-search">
+                <input id="searchService" type="search" name="search" style="background-color: #2f3035; border: 1px solid white; " class="form-control search-input" placeholder="Search" >
+                <div class="nav-item dropdown" style="background-color: #2f3035; border: 1px solid white; height: 38px;">
+                  <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Order ID
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                   
+                  </div>
+              </div>
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default form-control " style="background-color: #2f3035; border: 1px solid white;"><i class="fas fa-search"></i></button>
+                </span>
+              </div>
+            </form>
+          </div>
+         
+          <div>
+            
+          </div>
+        </div>
+      </div>
+        <!-- <nav class="navbar navbar-expand-md navbar-dark ">
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                <button class="nav-b"> <a class="nav-link" href="#">All <span class="sr-only">(current)</span></a></button>  
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " style="color: blue;" href="#">Awaiting</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="color: blue;" href="#">Pending</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="color: blue;" href="#">In Progress</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="color: blue;" href="#">Completed</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="color: blue;" href="#">Partial</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="color: blue;" href="#">Canceled</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="color: blue;" href="#">Processing</a>
+                  </li>               
+                   <li class="nav-item">
+                    <a class="nav-link" style="color: blue;" href="#">Fail</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="color: blue;" href="#">Error</a>
+                  </li>
+               
+               
+                
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <a href="#" class="nav-link" style="color: blue;">Export</a>
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Last 90 days
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="#">Action</a>
+                     
+                    </div>
+                </div>
+                <div class="input-group input-group-search">
+                  <input id="searchService" type="search" name="search" style="background-color: #2f3035;" class="form-control search-input" placeholder="Search" >
+                  <div class="nav-item dropdown" style="background-color: #2f3035;">
+                    <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Order ID
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="#">Action</a>
+                     
+                    </div>
+                </div>
+                  <span class="input-group-btn">
+                    <button type="submit" class="btn btn-default form-control " style="background-color: #2f3035;"><i class="fas fa-search"></i></button>
+                  </span>
+                </div>
+              </form>
+            </div>
+          </nav> -->
+    </section>
+
+
+    <section class="table-sec">
+      <div class="table-all">
+        <div class="table-responsive">
+          <table class="table  center " >
+              <thead style="background-color: #222327;" >
+                  <tr >
+                    <th ><div style="border: 1px solid grey; width: 25px; height: 22px;"><input type="checkbox" name="check" id="check-c"></div></th>
+                    <th >ID</th>
+                    <th  style="padding-left: 1rem;" >
+                          <div class="dropdown">
+                            <form action="" name="action">
+                                <select name="action" size="1" style="background-color: #1b1c20; color: white;">
+                                    <option value="Druck">User</option>
+                                    
+                                </select>
+                            </form>
+                          </div>
+                        
+                    </th>
+                   
+                    <th >Change</th>
+                    <th >Link</th>
+                    <th >Start count</th>
+                    <th>Quantity</th>
+                    <th  style="padding-left: 1rem;" >
+                      <div class="dropdown">
+                        <form action="" name="action">
+                            <select name="action" size="1" style="background-color: #1b1c20; color: white;">
+                                <option value="Druck">Service</option>
+                                
+                            </select>
+                        </form>
+                      </div>
+                    
+                </th>
+                   
+                    <th >Status</th>
+                    
+                    
+                    <th >Remains</th>
+                    
+                    <th >Created</th>
+                    <th  style="padding-left: 1rem;"  >
+                      <div class="dropdown">
+                        <form action="" name="action">
+                            <select name="action" size="1" style="background-color: #1b1c20; color: white;">
+                                <option value="Druck">Mode</option>
+                                
+                            </select>
+                        </form>
+                      </div>
+                    
+                </th>
+                   
+                    
+                    <th></th>
+                  
+                    
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                      <th scope="row">
+                          <input type="checkbox" name="check" id="check-c">
+                        </th>
+                      <td>961 </td>
+                      <td>Tylor </td>
+                      <td>2233</td>
+                      <td>file:///C:/Users/HP/Desktop/opaS/src/userside/service.html</td>
+                      <td>1000</td>
+                      <td>890</td>
+                      <td><div style="display: inline; border: 1px solid rgb(223, 220, 220); background-color: #1b1c20; padding: 5px;">4</div> instagram followers(low quantity)</td>
+                      <td>Pending</td>
+                      <td>15000</td>
+                      <td>2021-11-16 15:20:30</td>
+                      <td>Auto</td>
+                     
+                      <td class="dropdown">
+                        <form action="" name="action">
+                            <select name="action" size="1" style="background-color: #1b1c20; color: white;">
+                                <option value="Druck">Actions</option>
+                                
+                            </select>
+                        </form>
+                        </td>
+    
+                    </tr>
+                   
+                      
+                </tbody>
+            
+          </table>
+        </div>
+      </div>
+       
+    </section>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</body>
+</html>
